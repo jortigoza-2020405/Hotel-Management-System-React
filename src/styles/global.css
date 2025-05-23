@@ -726,3 +726,27 @@ body {
     width: 150px;
   }
 }
+
+
+.sidebar {
+  width: 240px;
+  min-height: 100vh;
+  background-color: #343a40;
+  color: white;
+}
+
+.sidebar-item {
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sidebar-item:hover,
+.sidebar-item.active {
+  background-color: #495057;
+}
