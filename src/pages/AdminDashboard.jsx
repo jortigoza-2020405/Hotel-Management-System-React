@@ -4,6 +4,8 @@ import Sidebar from "./sidebar.jsx"
 import Dashboard from "./Dashboard.jsx"
 import HotelTable from "./hotel-table.jsx"
 import HotelView from "./hotel-view.jsx"
+import RoomTable from "./room-table.jsx" // 
+import ReservationForm from "./Reservation.jsx";
 
 export default function AdminDashboard() {
   const [activeTab, setActiveTab] = useState("inicio")
@@ -32,6 +34,8 @@ export default function AdminDashboard() {
           {activeTab === "inicio" && <Dashboard />}
           {activeTab === "hotel" && <HotelTable />}
           {activeTab === "vista-hoteles" && <HotelView />}
+          {activeTab === "habitaciones" && <RoomTable />} 
+          {activeTab === "reservas" && <ReservationForm />}
         </div>
       </main>
     </div>

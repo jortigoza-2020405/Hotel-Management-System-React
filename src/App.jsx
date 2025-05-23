@@ -6,6 +6,7 @@ import Register from './pages/Auth/Register.jsx'
 import AdminDashboard from './pages/AdminDashboard.jsx'
 import HotelView from './pages/hotel-view.jsx'
 import NotFound from './pages/NotFound.jsx'
+import RoomTable from './pages/room-table.jsx' 
 
 const getUserRole = () => {
   try {
@@ -39,6 +40,14 @@ function App() {
         element={
           <ProtectedRoute role="adminPlataforma">
             <AdminDashboard />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/admin/habitaciones"
+        element={
+          <ProtectedRoute role="adminPlataforma">
+            <RoomTable />
           </ProtectedRoute>
         }
       />

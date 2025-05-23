@@ -28,6 +28,13 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
             <li className={`sidebar-item ${activeTab === "vista-hoteles" ? "active" : ""}`} onClick={() => setActiveTab("vista-hoteles")}>
               👁️ <span>Vista Hoteles</span>
             </li>
+            <li className={`sidebar-item ${activeTab === "habitaciones" ? "active" : ""}`} onClick={() => setActiveTab("habitaciones")}>
+              🛏️ <span>Habitaciones</span>
+            </li>
+            {/* NUEVA pestaña Reservas */}
+            <li className={`sidebar-item ${activeTab === "reservas" ? "active" : ""}`} onClick={() => setActiveTab("reservas")}>
+              📅 <span>Reservas</span>
+            </li>
           </ul>
         </nav>
       </div>
